@@ -1,1 +1,5 @@
-# third-independent-project
+# DELANI STUDIO
+
+## Author: Brian Otieno
+
+###
