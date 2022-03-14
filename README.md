@@ -9,4 +9,6 @@
 ###### LICENCE:COPYRIGHT (c) 2022,BRIAN OTIENO
 Permission is hereby granted free of charge to anybody obtaining a copy of this software and associated docuentation files to deal with the software restriction. 
 
+### other project link:https://otieno-png.github.io/
+
 ###### project link:https://otieno-png.github.io/third-independent-project/
