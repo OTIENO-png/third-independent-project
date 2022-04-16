@@ -3,13 +3,13 @@
 <head>
 
   <script>
-    function myFunction() {
-      let text;
-      let person = prompt("Please enter your name:", "*****");
+   function myFunction() {
+    let text;
+    let person = prompt("Please enter your name:", "*****");
       if (person == null || person == "") {
         text = "User cancelled the prompt.";
       } else {
-        text = "Hello " + person + "we have received your essage thank you for contacting us?";
+        text = "Hello " + person  + "we have received your essage thank you for contacting us?";
       }
       document.getElementById("demo").innerHTML = text;
     }
@@ -21,24 +21,43 @@
       $("#kenyaone").click(function(){
         $("p").show();
       });
-      
+
     });
     $(document).ready(function(){
       $("#kenya").click(function(){
         $("p1").show();
       });
-      
+
     });
     $(document).ready(function(){
       $("#kenya2").click(function(){
         $("p2").show();
       });
-      
+
+    });
+    $(document).ready(function(){
+      $("#project").click(function(){
+        $("button").show();
+      });
+
+    });
+    $(document).ready(function(){
+      $("#deve").click(function(){
+        $("button").show();
+      });
+
+    });
+    $(document).ready(function(){
+      $("#desi").click(function(){
+        $("button").show();
+      });
+
     });
     </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  
+
+
   button:hover {
   background-color: yellow;
 }
@@ -62,109 +81,154 @@ button:active {
         cursor: pointer;
         margin: 5px;
       }
-  .centerimage { position: absolute; top: 50; right: 50; } 
+  .centerimage { position: absolute; top: 50; right: 50;
+  }
 
   h2 {text-align: center;}
   h3 {text-align: center;}
-  h4 {text-align: center;}
   h5 {text-align: center;}
   p {text-align: center;}
-  div {text-align: center;}
+/*  div {text-align: center;}*/
 .container {
   position: relative;
   text-align: center;
   color: rgba(4, 3, 7, 0.712);
 }
-
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.all{
+  background-color:;
+  position: fixed;
+}
+.column {
+  float:left;
+  width: 30%;
+  padding: 5px;
+}
+#portfolio {
+  align-items: center;
+  text-align: center;
+  padding: 10px
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#image{
+  position: relative;
+
+}
 </style>
 </head>
 <body>
+<section id="all">
+  <h2>DELANI STUDIO</h2>
 
-<h2>DELANI STUDIO</h2>
-<div class="container">
-  <div src="image/logo.jpg" alt="logo"></div>
-  <img src="image/man.jpg" alt="man" style="width:50%;">
-  <img class="center image" border="0" src= "image/logo.png" alt="">
+  <div class="container">
+  <div style="position: relative; left: 0; top: 0;"></div>
+
+
+    <img src="image/man.jpg" alt="man" style="width:80%;">
+    <div src="image/logo.jpg" alt="logo" position></div>
+    <img class="center image" border="0" src= "image/logo.png" alt="">
     <div class="centered"><h1>WELCOME</h1><strong>TO DELANI STUDIO</strong><p style="font-size:15px">Amazing people are making design in afun environment</p></div>
 
-</div>
-<h3>ABOUT SECTION</h3>
-<P style="font-size:15px">When you are working with us,you are part of ateam of committed collaborators.All aspect of our software development process are integrated,interactive and agle.</P>
-<P style="font-size:15px">Our approach uniflies design development and product management to create exceptional products.</P>
-<p style="font-size:15px">We start each project by understanding your business goals,the user need and the project requirements.</p>
-<p style="font-size:15px">Then we can help to transalte them into effective and elegant solutions.</p>
-<div class="container">
-  <img src="image/working.jpg" alt="man" style="width:150%;"> 
-  <div class="centered"><strong>SERVICES</strong><p style="font-size:15px">Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.</p><p style="font-size:15px">The outcome of this scoping sessionis a propasal or high level statement on work based on nyour requirements we can complete offering or just the pieces you need</p></div>
-  <br>
-
-  <h2><strong>WHAT WE DO</strong> </h2>
-  <button onclick="hideButton(this)"  type="button"id="kenyaone"> <img src="image/design_icon.png" height ="50" width="75" />Design</button>
-  <p hidden ><strong>Design</strong> <br>Our design practice offers afull range of services including brand strategy,interaction and visual design and user experencice  testing.</p>
-  <p hidden>Througout your project,our designers  create and implement visual design and workfloew solitc user,feedback and work with yu making sure waht gets built is what is needed.</p>
-
-  <button onclick="hideButton(this)" type="button"id="kenya"> <img src="image/dev_icon.png" height ="50" width="75" />Development</button>
-  <p1 hidden ><strong>Development</strong> <br>All enginners are fluent in the latest enterprise,mobile and web development technologies.</p1>
-  <p1 hidden>The collaborate with your team to write and improve code on adaily basic using proven practices such as test driven development an pair programmming.<br></p1>
-
-  <button onclick="hideButton(this)" type="button"id="kenya2"> <img src="image/product_icon.png" height ="50" width="75" />Product Management</button>
-  <p2 hidden><strong>Project Mangement</strong> <br>Planning and development is interactive.Because we are constanly coding and testing the products we build ready to go live.</p2>
-  <p2 hidden>This interactive process allows for changes as business requirements evolve. </p2>
-
-</div>
-<h4>PORTFOLIO</h4>
-<div>
-  
-  <img align="left|right|middle|top|bottom">
-  <img src="image/work4.jpg" height ="150" width="200"> 
-  <img src="image/work3.jpg" height ="150" width="200"> 
-  <img src="image/work2.jpg" height ="150" width="200"> 
-  <img src="image/work1.jpg" height ="150" width="200"> <br>
-  <img src="image/work5.jpg" height ="150" width="200"> 
-  <img src="image/work6.jpg" height ="150" width="200"> 
-  <img src="image/work7.jpg" height ="150" width="200"> 
-  <img src="image/work8.jpg" height ="150" width="200"> 
-</div><br>
-<div class="container">
-  <img src="image/laptop.jpg" alt="man" style="width:100%;"> 
-  <div class="centered"><h1>CONTACT US</h1><p style="font-size:15px"><div class="bg-img">
-    <form class="container">
-      <label for="name">Name</label>
-      <input type="text">
-  
-      <label for="email">Email</label>
-      <input type="text"><br>
-      <br>
-
-      <label for="name">Type your mesaage here....</label>
-      <input type="text"><br>
-      <button onclick="myFunction()">SUBMIT</button>
-
-<p id="demo"></p>
-    </form>
   </div>
-</div>
-<br>
-<div>
-  <button type="button"><img src="image/behance.png" height ="30" width="30"></button>
-  <button type="button"><img src="image/dribble.png" height ="30" width="35"></button>
-  <button type="button"><img src="image/facebook.png" height ="30" width="35"></button>
-  <button type="button"><img src="image/flickr.png" height ="30" width="35"></button>
-  <button type="button"><img src="image/g_plus.png" height ="30" width="35"></button>
-  <button type="button"><img src="image/pinterest.png" height ="30" width="35"></button>
-  <button type="button"><img src="image/skype.png" height ="30" width="35"></button>
-  <button type="button"><img src="image/stumble_upon.png" height ="30" width="35"></button>
-  <button type="button"><img src="image/you_tube.png" height ="30" width="35"></button>
-</div>
+  <h3>ABOUT SECTION</h3>
+  <P  style="font-size:15px">When you are working with us,you are part of ateam of committed collaborators.All aspect of our software development process are integrated,interactive and agle.</P>
+  <P style="font-size:15px">Our approach uniflies design development and product management to create exceptional products.</P>
+  <p style="font-size:15px">We start each project by understanding your business goals,the user need and the project requirements.</p>
+  <p style="font-size:15px">Then we can help to transalte them into effective and elegant solutions.</p>
+  <div class="container">
+  <img src="image/working.jpg" alt="man" style="width:150%;"><br>
+  <div class="center"><strong>SERVICES</strong><p style="font-size:15px">Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.</p><p style="font-size:15px">The outcome of this scoping sessionis a propasal or high level statement on work based on nyour requirements we can complete offering or just the pieces you need</p></div>
+    <br>
 
-</body>
-<p>DELANI STUDIO</p>
-<P style="font-style: italic;">2022</P>
+    <h2><strong>WHAT WE DO</strong> </h2>
 
-</html> 
+    <div class="column">
+    <button onclick="hideButton(this)"  type="button"id="kenyaone"> <img src="image/design_icon.png" height ="50" width="75" />Design</button>
+    <div id="desi">
+    <p hidden ><strong>Design</strong><br>Our design practice offers afull range of services including brand strategy,interaction and visual design and user experencice  testing.
+    Througout your project,our designers  create and implement visual design and workfloew solitc user,feedback and work with yu making sure waht gets built is what is needed.</p>
+    </div>
+    </div>
+
+      <div class="column">
+      <button onclick="hideButton(this)" type="button"id="kenya"> <img src="image/dev_icon.png" height ="50" width="75" />Development</button>
+      <div id="deve">
+      <p1 hidden ><strong>Development</strong><br>All enginners are fluent in the latest enterprise,mobile and web development technologies.</p1>
+      <p1 hidden>The collaborate with your team to write and improve code on adaily basic using proven practices such as test driven development an pair programmming.</p1>
+      </div>
+      </div>
+
+
+    <div class="column">
+    <button onclick="hideButton(this)" type="button"id="kenya2"> <img src="image/product_icon.png" height ="50" width="75" />Product Management</button>
+    <div id="project">
+    <p2 hidden><strong>Project Mangement</strong> <br>Planning and development is interactive.Because we are constanly coding and testing the products we build ready to go live.</p2>
+    <p2 hidden>This interactive process allows for changes as business requirements evolve.</p2>
+    </div>
+    </div><br>
+    <div id="portfolio">
+    <h4>PORTFOLIO</h4>
+
+    <!--<img align="left|middle|top|bottom">-->
+
+      <div id="image">
+      <img src="image/work4.jpg" height ="150" width="200">
+      <img src="image/work3.jpg" height ="150" width="200">
+      <img src="image/work2.jpg" height ="150" width="200">
+      <img src="image/work1.jpg" height ="150" width="200"> <br>
+      <img src="image/work5.jpg" height ="150" width="200">
+      <img src="image/work6.jpg" height ="150" width="200">
+      <img src="image/work7.jpg" height ="150" width="200">
+      <img src="image/work8.jpg" height ="150" width="200">
+      <div>
+
+  </div><br>
+  <div class="container">
+    <img src="image/laptop.jpg" alt="man" style="width:100%;">
+    <div class="centered"><h1>CONTACT US</h1><p style="font-size:15px"><div class="bg-img">
+      <form class="container">
+        <label for="name">Name</label>
+        <input id="name"type="text"> <br>
+
+        <label for="email">Email</label>
+         <textarea rows="2" cols="30" placeholder="@gmail" required></textarea>        <br>
+
+        <p><label for="msg">Message:</label>
+                <textarea rows="4" cols="50" id="msg" name="user message" placeholder="write your concern here:"></textarea>
+            </p><br>
+        <button onclick="myFunction(name)">SUBMIT</button>
+
+  <p id="demo"></p>
+      </form>
+    </div>
+  </div>
+  <br>
+  <div>
+    <button type="button"><img src="image/behance.png" height ="30" width="30"></button>
+    <button type="button"><img src="image/dribble.png" height ="30" width="35"></button>
+    <button type="button"><img src="image/facebook.png" height ="30" width="35"></button>
+    <button type="button"><img src="image/flickr.png" height ="30" width="35"></button>
+    <button type="button"><img src="image/g_plus.png" height ="30" width="35"></button>
+    <button type="button"><img src="image/pinterest.png" height ="30" width="35"></button>
+    <button type="button"><img src="image/skype.png" height ="30" width="35"></button>
+    <button type="button"><img src="image/stumble_upon.png" height ="30" width="35"></button>
+    <button type="button"><img src="image/you_tube.png" height ="30" width="35"></button>
+  </div>
+  <p>DELANI STUDIO</p>
+  <P style="font-style: italic;">2022</P>
+
+  </body>
+
+</section>
+
+
+</html>
